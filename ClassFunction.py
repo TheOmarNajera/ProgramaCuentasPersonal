@@ -13,7 +13,7 @@ class Gastos:
         return self.__Monto
     
     def __repr__(self):
-        return f'ID: {self.__ID}   |   Fecha: {self.__Fecha}   |   Movimiento: {self.__Movimiento}   |   Monto: {self.__Monto}'
+        return f'ID: {self.__ID}   |   Fecha: {self.__Fecha}   |   Movimiento: {self.__Movimiento}   |   Monto: ${self.__Monto}'
 
 
 from os import system,name

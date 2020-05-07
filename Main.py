@@ -8,14 +8,19 @@ def main():
     ID = 0
     total = 0
     
-    while OpUsuario != 3:
+    while True:
         OpUsuario = input("Programa de cuentas\n¿Qué desea hacer?\n1.- Consultar Movimientos\n2.- Realizar nuevo movimiento\n3.- Salir\n")
         limpiar_pantalla()
         
         if OpUsuario == "2":
             ID = ID + 1
             Fecha, Movimiento = input("Fecha: "), input("Movimiento: ")
-            Monto = int(input("Monto: $"))
+            while True:
+                try:
+                    Monto = int(input("Monto: $"))
+                    break
+                except ValueError:
+                    print("Dato no válido. Intente de nuevo.")
             Mov = Gastos(ID, Fecha, Movimiento, Monto)
             ListaMovimiento.append(Mov)
             total = total + Monto
@@ -28,7 +33,7 @@ def main():
         
         elif OpUsuario == "3":
             print("Proceso Terminado")
-            OpUsuario = int(OpUsuario)
+            break
         
         else:
             print("Opcion Inválida")
