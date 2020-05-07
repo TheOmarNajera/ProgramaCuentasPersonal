@@ -39,7 +39,7 @@ def main():
             total = total + Monto
             limpiar_pantalla()
         
-        
+
         elif OpUsuario == 1:
             for objeto in ListaMovimiento:
                 print(objeto)
@@ -48,5 +48,3 @@ def main():
         else:
             print("Proceso Terminado")
             break
-
-main()
