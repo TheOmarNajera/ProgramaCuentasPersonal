@@ -1,6 +1,8 @@
 #Llamando a las clases y funciones
 from ClassFunction import Gastos
 from ClassFunction import limpiar_pantalla
+from Class import Impresion
+
 #Definiendo el Main()
 def main():
     ListaMovimiento = []
@@ -46,5 +48,6 @@ def main():
             print(f'Total: ${total}')
         
         else:
-            print("Proceso Terminado")
+            Salida = Impresion()
+            Salida.impresion()
             break
