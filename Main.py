@@ -7,7 +7,7 @@ def main():
     OpUsuario = 0
     ID = 0
     total = 0
-    
+#definir    
     while True:
         while True:
             #Validacion de datos

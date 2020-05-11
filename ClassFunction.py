@@ -1,7 +1,7 @@
 class Gastos:    
     def __init__(self, ID, Fecha, Movimiento, Monto):
         self.__ID, self.__Fecha, self.__Movimiento, self.__Monto = ID, Fecha, Movimiento, Monto
-
+#Property
     @property
     def ID(self, ID):
         return self.__ID
